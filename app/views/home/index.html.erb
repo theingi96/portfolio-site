@@ -58,3 +58,71 @@
   </div>
   <div class="hero-circle"></div>
 </section>
+
+<section class="about" id="about">
+  <div class="about-content">
+    <h2 class="section-title">About Me</h2>
+
+    <p>
+      ミャンマー出身、日本在住3年になります。
+      人と話すことや新しいことを学ぶことが好きで、
+      これまでの経験を活かしながら、ITの力で人の役に立つサービスを作りたいと思い、
+      Webエンジニアを目指しています。
+    </p>
+
+    <div class="about-points">
+      <div class="about-point">
+        <i class="fa-solid fa-location-dot"></i>
+        <p>ミャンマー出身<br>日本在住3年</p>
+      </div>
+
+      <div class="about-point">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <p>TECH CAMP<br>卒業</p>
+      </div>
+
+      <div class="about-point">
+        <i class="fa-solid fa-code"></i>
+        <p>Webエンジニアへ<br>転職活動中</p>
+      </div>
+
+      <div class="about-point">
+        <i class="fa-regular fa-heart"></i>
+        <p>学ぶこと・作ること<br>人の役に立つことが好き</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="personality-card">
+    <h3>私の性格</h3>
+
+    <ul>
+      <li><i class="fa-regular fa-circle-check"></i> 責任感がある</li>
+      <li><i class="fa-solid fa-arrow-trend-up"></i> コツコツ努力する</li>
+      <li><i class="fa-solid fa-rocket"></i> 新しいことに挑戦する</li>
+      <li><i class="fa-solid fa-users"></i> チームで協力することが得意</li>
+      <li><i class="fa-regular fa-flag"></i> 目標に向かって最後までやり抜く</li>
+    </ul>
+  </div>
+</section>
+<section class="skills" id="skills">
+  <h2 class="section-title center">Skills</h2>
+
+  <div class="skills-list">
+    <% @skills.each do |skill| %>
+      <div class="skill-item">
+        <div class="skill-icon">
+          <%= skill.name.first %>
+        </div>
+
+        <p class="skill-name"><%= skill.name %></p>
+
+        <div class="skill-level">
+          <% 5.times do |i| %>
+            <span class="<%= i < skill.level ? 'active-dot' : '' %>"></span>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</section>
