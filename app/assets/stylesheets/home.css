@@ -156,3 +156,27 @@
   border-radius: 30px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-circle {
+  position: absolute;
+  top: 80px;
+  right: 320px;
+
+  width: 320px;
+  height: 320px;
+
+  background: rgba(59, 130, 246, 0.08);
+
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.hero-content,
+.hero-image {
+  position: relative;
+  z-index: 1;
+}
