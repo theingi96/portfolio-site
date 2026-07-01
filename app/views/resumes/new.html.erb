@@ -1,0 +1,35 @@
+<h1>履歴書アップロード</h1>
+
+<%= form_with model: @resume, local: true do |f| %>
+
+  <div>
+    <%= f.label :title, "タイトル" %><br>
+    <%= f.text_field :title %>
+  </div>
+
+  <br>
+
+  <div>
+    <%= f.label :description, "説明" %><br>
+    <%= f.text_area :description %>
+  </div>
+
+  <br>
+
+  <div>
+    <%= f.label :file, "PDFファイル" %><br>
+    <%= f.file_field :file, accept: "application/pdf" %>
+  </div>
+
+  <br>
+
+  <div>
+    <%= f.check_box :is_active %>
+    <%= f.label :is_active, "公開する" %>
+  </div>
+
+  <br>
+
+  <%= f.submit "アップロード" %>
+
+<% end %>

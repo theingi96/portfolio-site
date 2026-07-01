@@ -34,6 +34,12 @@
     <div class="hero-buttons">
       <a href="#projects" class="btn-primary">プロジェクトを見る →</a>
       <a href="#contact" class="btn-secondary">お問い合わせ ✉</a>
+      
+      <% if @resume&.file&.attached? %>
+        <%= link_to "履歴書をダウンロード ↓",
+          rails_blob_path(@resume.file, disposition: "attachment"),
+          class: "btn-secondary" %>
+      <% end %>
     </div>
 
     <div class="hero-links">
