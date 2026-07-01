@@ -39,6 +39,11 @@
         <%= link_to "履歴書をダウンロード ↓",
           rails_blob_path(@resume.file, disposition: "attachment"),
           class: "btn-secondary" %>
+      <% else %>
+
+        <span class="btn-disabled">
+          履歴書は準備中です
+        </span>
       <% end %>
     </div>
 
