@@ -1,0 +1,21 @@
+<section class="skills" id="skills">
+  <h2 class="section-title center">Skills</h2>
+
+  <div class="skills-list">
+    <% @skills.each do |skill| %>
+      <div class="skill-item">
+        <div class="skill-icon">
+          <%= skill.name.first %>
+        </div>
+
+        <p class="skill-name"><%= skill.name %></p>
+
+        <div class="skill-level">
+          <% 5.times do |i| %>
+            <span class="<%= i < skill.level ? 'active-dot' : '' %>"></span>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</section>
