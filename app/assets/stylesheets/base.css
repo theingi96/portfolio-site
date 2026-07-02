@@ -1,0 +1,41 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #334155;
+  background: #ffffff;
+}
+
+.section-title {
+  font-size: 42px;
+  color: #0f2a5f;
+  margin-bottom: 28px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background: #2563eb;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+
+.section-title.center {
+  text-align: center;
+}
+
+.section-title.center::after {
+  left: 50%;
+  transform: translateX(-50%);
+}

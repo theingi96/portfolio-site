@@ -1,0 +1,183 @@
+@media (max-width: 1024px) {
+  .header {
+    padding: 0 30px;
+  }
+
+  .hero {
+    padding: 80px 5%;
+    gap: 40px;
+  }
+
+  .hero-title {
+    font-size: 54px;
+  }
+
+  .hero-subtitle {
+    font-size: 30px;
+  }
+
+  .profile-image {
+    width: 300px;
+  }
+
+  .skills-list {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .nav a {
+    font-size: 14px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 70px 6%;
+  }
+
+  .hero-title {
+    font-size: 46px;
+  }
+
+  .hero-subtitle {
+    font-size: 26px;
+  }
+
+  .hero-description {
+    margin: 0 auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-links {
+    justify-content: center;
+  }
+
+  .hero-image {
+    margin-top: 30px;
+  }
+
+  .profile-image {
+    width: 280px;
+  }
+
+  .hero-circle {
+    display: none;
+  }
+
+  .about {
+    flex-direction: column;
+    padding: 80px 6%;
+  }
+
+  .about-points {
+    grid-template-columns: 1fr;
+  }
+
+  .skills {
+    padding: 80px 6%;
+  }
+
+  .skills-list {
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .projects-section,
+  .experience-section,
+  .contact-section {
+    padding: 80px 6%;
+  }
+
+  .project-card,
+  .experience-card {
+    padding: 25px;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-illustration {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 28px;
+  }
+
+  .nav {
+    gap: 12px;
+  }
+
+  .nav a {
+    font-size: 13px;
+  }
+
+  .hero-title {
+    font-size: 38px;
+  }
+
+  .hero-subtitle {
+    font-size: 22px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .profile-image {
+    width: 240px;
+  }
+
+  .section-title,
+  .projects-section h2,
+  .experience-section h2,
+  .contact-text h2 {
+    font-size: 30px;
+  }
+
+  .skill-item {
+    width: 120px;
+  }
+
+  .project-card h3,
+  .experience-card h3 {
+    font-size: 20px;
+  }
+
+  .footer {
+    padding: 25px 5%;
+  }
+}
