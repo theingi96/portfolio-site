@@ -132,3 +132,26 @@
   line-height: 1.8;
   margin-bottom: 0;
 }
+/* ===========================
+   Portfolio / Other
+=========================== */
+
+.career-bottom-cards {
+  width: 92%;
+  max-width: 1500px;
+
+  margin: 0 auto 40px;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 28px;
+}
+
+.career-list {
+  padding-left: 22px;
+}
+
+.career-list li {
+  line-height: 2;
+  color: #333;
+}
