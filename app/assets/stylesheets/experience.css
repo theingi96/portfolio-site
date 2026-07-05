@@ -155,3 +155,155 @@
   line-height: 2;
   color: #333;
 }
+/* ===========================
+   Career Timeline
+=========================== */
+
+.career-timeline {
+  width: 92%;
+  max-width: 1500px;
+  margin: 0 auto 40px;
+  background: white;
+  border-radius: 12px;
+  padding: 30px 35px;
+  box-shadow: 0 4px 20px rgba(0,0,0,.08);
+}
+
+.timeline-wrapper {
+  margin-top: 30px;
+  position: relative;
+}
+
+.timeline-wrapper::before {
+  content: "";
+  position: absolute;
+  left: 183px;
+  top: 15px;
+  bottom: 15px;
+  width: 2px;
+  background: #2d5cff;
+}
+
+.timeline-row {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 30px;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.timeline-date {
+  color: #2563eb;
+  font-weight: 700;
+  font-size: 16px;
+  padding-top: 18px;
+  position: relative;
+}
+
+.timeline-date::after {
+  content: "";
+  position: absolute;
+
+  right: -24px;
+  top: 20px;
+
+  width: 12px;
+  height: 12px;
+
+  background: white;
+  border: 2px solid #2d5cff;
+
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.timeline-card {
+
+  background:#fff;
+
+  border:1px solid #dfe6f2;
+
+  border-radius:8px;
+
+  padding:18px 22px;
+
+  box-shadow:none;
+}
+
+.timeline-card h3{
+
+    font-size:26px;
+
+    color:#173c79;
+
+    margin-bottom:8px;
+}
+
+.timeline-company{
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#444;
+
+    margin-bottom:8px;
+}
+
+.timeline-meta{
+
+    font-size:13px;
+
+    color:#888;
+
+    margin-bottom:18px;
+}
+
+.timeline-card h4{
+
+    color:#173c79;
+
+    margin-top:18px;
+
+    margin-bottom:8px;
+
+    font-size:16px;
+}
+
+.timeline-card ul{
+
+    margin-top:8px;
+
+    padding-left:18px;
+
+    line-height:1.9;
+
+    font-size:15px;
+}
+.job-columns{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+
+    margin-top:20px;
+}
+
+.job-column h4{
+    margin-top:0;
+}
+.timeline-badges {
+  display: flex;
+  gap: 8px;
+  margin: 8px 0 15px;
+  flex-wrap: wrap;
+}
+
+.timeline-badge {
+  background: #eef3fb;
+  color: #16376f;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid #d7e3f4;
+}
