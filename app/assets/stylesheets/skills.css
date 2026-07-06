@@ -17,25 +17,23 @@
   text-align: center;
 }
 
-.skill-icon {
-  width: 56px;
-  height: 56px;
-  margin: 0 auto 12px;
-  border-radius: 50%;
-  background: #eaf2ff;
-  color: #0f2a5f;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  font-weight: bold;
+.skill-icon{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:12px;
+
+  background:none;
+  border:none;
+  width:auto;
+  height:auto;
 }
 
 .skill-name {
   font-size: 14px;
   font-weight: 600;
   color: #0f2a5f;
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .skill-level span {
@@ -49,4 +47,10 @@
 
 .skill-level .active-dot {
   background: #2563eb;
+}
+
+.skill-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
 }

@@ -1,11 +1,28 @@
 <section class="skills" id="skills">
   <h2 class="section-title center">Skills</h2>
 
+  <% icon_map = {
+    "Ruby" => "ruby.svg",
+    "Ruby on Rails" => "rails.svg",
+    "HTML" => "html5.svg",
+    "CSS" => "css3.svg",
+    "JavaScript" => "javascript.svg",
+    "SQL" => "sql.svg",
+    "Git" => "git.svg",
+    "GitHub" => "github.svg"
+  } %>
+
   <div class="skills-list">
     <% @skills.each do |skill| %>
+
       <div class="skill-item">
+
         <div class="skill-icon">
-          <%= skill.name.first %>
+
+          <%= image_tag "icons/#{icon_map[skill.name]}",
+                class: "skill-logo",
+                alt: skill.name %>
+
         </div>
 
         <p class="skill-name"><%= skill.name %></p>
@@ -15,7 +32,9 @@
             <span class="<%= i < skill.level ? 'active-dot' : '' %>"></span>
           <% end %>
         </div>
+
       </div>
+
     <% end %>
   </div>
 </section>
