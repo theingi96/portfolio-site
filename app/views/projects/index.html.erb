@@ -9,6 +9,17 @@
 
     <% @projects.each do |project| %>
 
+      <% github_url =
+        case project.title
+        when "FURIMA"
+          "https://github.com/theingi96/furima-46495"
+        when "Portfolio Site"
+          "https://github.com/theingi96/portfolio-site"
+        else
+          project.github_url
+        end
+      %>
+
       <div class="project-card">
 
         <div class="project-image">
@@ -70,15 +81,23 @@
 
           <div class="project-links">
 
-            <a href="<%= project.github_url %>" target="_blank">
+            <a href="<%= github_url %>" target="_blank" rel="noopener noreferrer">
               <i class="fa-brands fa-github"></i>
               GitHub
             </a>
 
-            <% if project.app_url.present? %>
-              <a href="<%= project.app_url %>" target="_blank">
+            <% if project.title == "FURIMA" %>
+
+              <a href="https://furima-46495.onrender.com" target="_blank" rel="noopener noreferrer">
                 Demo
               </a>
+
+            <% elsif project.app_url.present? %>
+
+              <a href="<%= project.app_url %>" target="_blank" rel="noopener noreferrer">
+                Demo
+              </a>
+
             <% end %>
 
           </div>
