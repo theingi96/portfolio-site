@@ -1,0 +1,55 @@
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="hero-greeting">こんにちは、はじめまして！</p>
+
+    <h1 class="hero-title">Theingi Lin</h1>
+
+    <h2 class="hero-subtitle">
+      <span>Webエンジニア</span>を目指しています
+    </h2>
+
+    <p class="hero-description">
+      TECH CAMPでRuby on Railsを中心にWebアプリケーション開発を学び、
+      現在はWebエンジニアとしてのキャリアチェンジに向けて活動しています。
+    </p>
+
+    <div class="hero-buttons">
+      <%= link_to "プロジェクトを見る →", projects_path, class: "btn-primary" %>
+      <%= link_to "お問い合わせ ✉", contact_path, class: "btn-secondary" %>
+      
+      <% if @resume&.file&.attached? %>
+        <%= link_to "履歴書をダウンロード ↓",
+          rails_blob_path(@resume.file, disposition: "attachment"),
+          class: "btn-secondary" %>
+      <% else %>
+
+        <span class="btn-disabled">
+          履歴書は準備中です
+        </span>
+      <% end %>
+    </div>
+
+    <div class="hero-links">
+
+      <a href="https://github.com/theingi96" target="_blank">
+        <i class="fa-brands fa-github"></i>
+      </a>
+
+      <a href=" https://www.linkedin.com/in/theingi-lin" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+
+      <a href="mailto:theingilin.personal@gmail.com">
+        <i class="fa-regular fa-envelope"></i>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <%= image_tag "profile.jpg", class: "profile-image" %>
+  </div>
+  <div class="hero-circle"></div>
+</section>
+

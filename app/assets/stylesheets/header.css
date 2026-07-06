@@ -7,6 +7,10 @@
   background: white;
   border-bottom: 1px solid #e5e5e5;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
 }
 
 .logo {
@@ -15,6 +19,14 @@
   color: #102a5c;
 }
 
+.logo a {
+  color: #102a5c;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  color: #2563eb;
+}
 .nav {
   display: flex;
   gap: 18px;
@@ -23,18 +35,19 @@
 
 .nav a {
   text-decoration: none;
-  color: #102a5c;
-  font-size: 15px;
-  font-weight: 500;
+  color: #0f2a5f;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
 .nav a:hover {
   color: #2563eb;
 }
 
-.active {
-  border-bottom: 3px solid #3b82f6;
-  padding-bottom: 8px;
+.nav a.active {
+  color: #2563eb;
+  border-bottom: 3px solid #2563eb;
+  padding-bottom: 6px;
 }
 
 .moon {
