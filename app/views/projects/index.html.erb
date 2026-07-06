@@ -1,23 +1,94 @@
-<section class="projects-section" id="projects">
-  <h2>Projects</h2>
+<section class="projects-page">
 
-  <% @projects.each do |project| %>
-    <div class="project-card">
-      <h3><%= project.title %></h3>
+  <div class="projects-title">
+    <h1>制作実績</h1>
+    <p>TECH CAMPおよび個人開発で制作したWebアプリケーション</p>
+  </div>
 
-      <p>
-        <%= project.description %>
-      </p>
+  <div class="projects-grid">
 
-      <p>
-        GitHub:
-        <%= project.github_url %>
-      </p>
+    <% @projects.each do |project| %>
 
-      <p>
-        App:
-        <%= project.app_url %>
-      </p>
-    </div>
-  <% end %>
+      <div class="project-card">
+
+        <div class="project-image">
+
+          <% if project.title == "FURIMA" %>
+
+            <%= image_tag "furima.png", alt: "FURIMA" %>
+
+          <% elsif project.title == "Portfolio Site" %>
+
+            <%= image_tag "portfolio.png", alt: "Portfolio Site" %>
+
+          <% else %>
+
+            <%= image_tag "portfolio.png", alt: project.title %>
+
+          <% end %>
+
+        </div>
+
+        <div class="project-body">
+
+          <% if project.title == "FURIMA" %>
+            <span class="project-status featured">⭐ Featured Project</span>
+          <% elsif project.title == "Portfolio Site" %>
+            <span class="project-status current">🚀 Current Project</span>
+          <% end %>
+
+          <h2><%= project.title %></h2>
+
+          <p class="project-description">
+            <%= project.description %>
+          </p>
+
+          <% if project.title == "FURIMA" %>
+
+            <div class="project-tags">
+              <span>Ruby</span>
+              <span>Ruby on Rails</span>
+              <span>JavaScript</span>
+              <span>MySQL</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Git</span>
+              <span>GitHub</span>
+            </div>
+
+          <% elsif project.title == "Portfolio Site" %>
+
+            <div class="project-tags">
+              <span>Ruby on Rails</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>GitHub</span>
+            </div>
+
+          <% end %>
+
+          <div class="project-links">
+
+            <a href="<%= project.github_url %>" target="_blank">
+              <i class="fa-brands fa-github"></i>
+              GitHub
+            </a>
+
+            <% if project.app_url.present? %>
+              <a href="<%= project.app_url %>" target="_blank">
+                Demo
+              </a>
+            <% end %>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    <% end %>
+
+  </div>
+
 </section>
