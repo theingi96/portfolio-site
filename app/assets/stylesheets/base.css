@@ -11,7 +11,7 @@ html {
 body {
   font-family: "Noto Sans JP", sans-serif;
   color: #334155;
-  background: #ffffff;
+  background: transparent;
 }
 
 .section-title {
@@ -55,3 +55,13 @@ main {
   flex: 1;
 }
 
+body {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.541), rgba(255, 255, 255, 0.5)),
+    url("home.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

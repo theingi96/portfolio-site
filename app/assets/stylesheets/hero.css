@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(120deg, #ffffff 0%, #eef6ff 100%);
+  background: transparent;
 }
 
 .hero-content {
@@ -125,3 +125,4 @@
   position: relative;
   z-index: 1;
 }
+

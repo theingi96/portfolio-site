@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   gap: 70px;
-  background: #ffffff;
+  background: transparent;
 }
 
 .about-content {
@@ -108,3 +108,4 @@
   color: #334155;
   margin-bottom: 16px;
 }
+
