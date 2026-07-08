@@ -52,41 +52,40 @@
 }
 
 .personality-card {
-  width: 34%;
-  background: #ffffff;
-  padding: 34px;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(15, 42, 95, 0.12);
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 22px;
+  padding: 32px;
+  box-shadow: 0 18px 45px rgba(15, 42, 95, 0.12);
 }
 
 .personality-card h3 {
+  color: #0f2a5f;
   font-size: 24px;
-  color: #0f2a5f;
-  margin-bottom: 28px;
-  position: relative;
+  margin-bottom: 8px;
 }
 
-.personality-card h3::after {
-  content: "";
-  width: 36px;
-  height: 3px;
-  background: #2563eb;
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-}
-
-.personality-card ul {
-  list-style: none;
-}
-
-.personality-card li {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  color: #0f2a5f;
-  font-size: 16px;
+.personality-card .personality-subtitle {
+  color: #64748b;
+  font-size: 14px;
   margin-bottom: 22px;
+}
+
+.personality-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.personality-list li {
+  list-style: none;
+  background: #ffffff;
+  color: #0f2a5f;
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(15, 42, 95, 0.08);
 }
 
 .home-pr-section {
