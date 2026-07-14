@@ -1,24 +1,122 @@
-# README
+# Portfolio Site
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Overview
 
-Things you may want to cover:
+A personal portfolio website built with Ruby on Rails to introduce myself, showcase my projects, skills, and work experience.
 
-* Ruby version
+This portfolio was created for my job search as a Web Engineer in Japan.
 
-* System dependencies
+---
 
-* Configuration
+## Features
 
-* Database creation
+* Home page
+* About Me
+* Skills
+* Projects
+* Experience
+* Contact
+* Resume Download
+* Responsive Design
 
-* Database initialization
+---
 
-* How to run the test suite
+## Technologies Used
 
-* Services (job queues, cache servers, search engines, etc.)
+### Backend
 
-* Deployment instructions
+* Ruby
+* Ruby on Rails 7.1.6
 
-* ...
+### Frontend
+
+* HTML
+* CSS
+* JavaScript
+
+### Database
+
+* SQLite3 (Development)
+
+### Version Control
+
+* Git
+* GitHub
+
+### Deployment
+
+* AWS EC2 (Planned)
+
+---
+
+## Pages
+
+| Page       | Description         |
+| ---------- | ------------------- |
+| Home       | Introduction        |
+| About      | Self Introduction   |
+| Skills     | Technical Skills    |
+| Projects   | Portfolio Projects  |
+| Experience | Work Experience     |
+| Contact    | Contact Information |
+
+---
+
+## Project Structure
+
+```text
+app/
+├── controllers/
+├── models/
+├── views/
+├── assets/
+├── helpers/
+
+config/
+db/
+public/
+```
+
+---
+
+## Database Design
+
+Coming Soon
+
+---
+
+## Main Functions
+
+Coming Soon
+
+---
+
+## Screenshots
+
+Coming Soon
+
+---
+
+## Future Improvements
+
+* Admin Dashboard
+* Dark Mode
+* Multilingual Support
+* Blog Feature
+* Project Filtering
+
+---
+
+## Author
+
+**Theingi Lin**
+
+* GitHub: https://github.com/theingi96
+* Qiita
+* LinkedIn
+
+---
+
+## License
+
+This project is for portfolio purposes.
